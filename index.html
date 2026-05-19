@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Invitation page for the King of the Beach volleyball tournament."
+    >
+    <title>King of the Beach Invitational</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/hero-beach-volleyball.jpg" alt="">
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Invite only / Beach volleyball</p>
+          <h1 id="page-title">King of the Beach</h1>
+          <p class="hero__lede">
+            A fast-paced rotating-partner tournament built to find the player
+            who can win with anyone.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" data-signup-link href="#signup">
+              Request a spot
+            </a>
+            <a class="button button--secondary" href="#details">View details</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="details" id="details" aria-label="Tournament details">
+        <article>
+          <span class="detail-label">Format</span>
+          <strong>Rotating partners</strong>
+          <p>Every round reshuffles the court. You keep your own points.</p>
+        </article>
+        <article>
+          <span class="detail-label">Level</span>
+          <strong>Competitive</strong>
+          <p>Bring clean touches, smart shots, and enough legs for a long day.</p>
+        </article>
+        <article>
+          <span class="detail-label">Signup</span>
+          <strong>Limited field</strong>
+          <p>Submit your entry request and wait for confirmation before locking plans.</p>
+        </article>
+      </section>
+
+      <section class="signup" id="signup" aria-labelledby="signup-title">
+        <div>
+          <p class="eyebrow">Ready to play?</p>
+          <h2 id="signup-title">Claim your invite.</h2>
+        </div>
+        <a class="button button--dark" data-signup-link href="#">
+          Open signup form
+        </a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
