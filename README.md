@@ -2,6 +2,12 @@
 
 Static invitation site for the King of the Beach volleyball tournament.
 
+The event copy follows the official King of the Court rules:
+
+```text
+https://kotc.ams3.digitaloceanspaces.com/img/KOTC-Rules.pdf
+```
+
 ## Update signup form
 
 Replace the placeholder URL in `script.js`:
