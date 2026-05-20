@@ -10,8 +10,42 @@
     <title>King of the Beach Invitational</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <main class="page-shell">
+  <body class="access-locked">
+    <section class="access-gate" aria-labelledby="access-title">
+      <div class="terminal" role="dialog" aria-modal="true">
+        <div class="terminal__chrome" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line">initializing secure invite node...</p>
+          <p class="terminal__line">route: /king-of-the-beach/classified</p>
+          <p class="terminal__line">clearance: invite required</p>
+          <h2 id="access-title">Enter passphrase</h2>
+          <form class="terminal__form" id="access-form">
+            <label for="access-password">password</label>
+            <div class="terminal__input-row">
+              <span aria-hidden="true">&gt;</span>
+              <input
+                id="access-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                spellcheck="false"
+                required
+              >
+            </div>
+            <button type="submit">unlock</button>
+          </form>
+          <p class="terminal__status" id="access-status" aria-live="polite">
+            awaiting passphrase
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="page-shell" id="site-content" aria-hidden="true">
       <section class="hero" aria-labelledby="page-title">
         <div class="hero__media" aria-hidden="true">
           <img src="assets/hero-beach-volleyball.jpg" alt="">

@@ -18,6 +18,17 @@ const signupUrl = "https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM";
 
 Use a Google Form that writes responses to a Google Sheet.
 
+## Update access passphrase
+
+The static access screen checks a SHA-256 hash in `script.js`. To change the
+passphrase, generate a new hash locally and replace `accessPasswordHash`.
+
+```sh
+node -e "const crypto=require('crypto'); console.log(crypto.createHash('sha256').update('new-passphrase').digest('hex'))"
+```
+
+This is a lightweight client-side gate for GitHub Pages, not server-side auth.
+
 ## GitHub Pages
 
 This repo includes a GitHub Actions workflow at `.github/workflows/pages.yml`.
