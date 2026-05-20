@@ -360,20 +360,58 @@ h2 {
   gap: 0.75rem;
 }
 
-.sponsors__grid span {
-  display: grid;
-  min-height: 84px;
-  place-items: center;
+.sponsor {
+  display: flex;
+  min-height: 116px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   padding: 1rem;
-  background:
-    linear-gradient(135deg, rgba(244, 213, 141, 0.12), rgba(37, 167, 184, 0.12)),
-    rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1rem, 2.4vw, 1.55rem);
-  font-weight: 800;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
   text-align: center;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.sponsor:hover,
+.sponsor:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.sponsor img {
+  display: block;
+  max-width: min(84%, 280px);
+  max-height: 74px;
+  object-fit: contain;
+}
+
+.sponsor--light {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.sponsor--zzq {
+  flex-direction: column;
+  background: #e94a00;
+  color: #18100b;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.sponsor--zzq strong {
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 0.9;
+}
+
+.sponsor--zzq small {
+  margin-top: 0.25rem;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .signup {
