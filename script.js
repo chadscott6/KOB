@@ -54,7 +54,7 @@ accessForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  setStatus("access denied", "denied");
+  setStatus("You're not elite... try again", "denied");
   passwordInput.value = "";
   passwordInput.focus();
 });
