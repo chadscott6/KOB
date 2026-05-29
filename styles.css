@@ -259,6 +259,24 @@ h2 {
   line-height: 1.55;
 }
 
+.hero__date {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  max-width: 680px;
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(0.92rem, 2vw, 1.06rem);
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.hero__date strong {
+  color: var(--sand);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
