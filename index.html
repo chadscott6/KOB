@@ -132,6 +132,112 @@
         </a>
       </section>
 
+      <section class="tournament-flow" aria-labelledby="flow-title">
+        <div class="flow__intro">
+          <p class="eyebrow">Tournament flow</p>
+          <h2 id="flow-title">How it works</h2>
+          <p>
+            Ten teams. Two courts. Three fast King of the Court pool sessions.
+            Then the top four teams play off for the crown.
+          </p>
+        </div>
+
+        <div class="flow__stats" aria-label="Tournament structure">
+          <div><strong>10</strong><span>teams</span></div>
+          <div><strong>2</strong><span>courts</span></div>
+          <div><strong>3x20</strong><span>minute pool sessions</span></div>
+          <div><strong>4</strong><span>playoff teams</span></div>
+        </div>
+
+        <div class="flow__steps" aria-label="Tournament flow steps">
+          <article>
+            <span>1</span>
+            <h3>Random court draw</h3>
+            <p>Teams are split across two courts. Each court starts with five teams.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Pool play grind</h3>
+            <p>Every team gets three 20-minute King of the Court sessions.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Points decide the cut</h3>
+            <p>Placement points after each session stack into the overall standings.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Top four advance</h3>
+            <p>Semis and finals decide who leaves as King of the Beach.</p>
+          </article>
+        </div>
+
+        <div class="flow__court-grid">
+          <div class="flow__court" role="img" aria-label="King of the Court diagram with challenger side and king side">
+            <div class="flow__net" aria-hidden="true"></div>
+            <div class="flow__side flow__side--challenger">
+              <strong>Challenger side</strong>
+              <span>Win the rally to take the throne.</span>
+            </div>
+            <div class="flow__side flow__side--king">
+              <strong>King side</strong>
+              <span>Only this side can score.</span>
+            </div>
+            <div class="flow__note">Win, rotate, defend</div>
+          </div>
+
+          <aside class="flow__score" aria-label="Pool play scoring">
+            <h3>Pool-play scoring</h3>
+            <p>Each 20-minute session pays out points by court finish.</p>
+            <ol>
+              <li><span>1st place</span><strong>5 pts</strong></li>
+              <li><span>2nd place</span><strong>4 pts</strong></li>
+              <li><span>3rd place</span><strong>3 pts</strong></li>
+              <li><span>4th place</span><strong>2 pts</strong></li>
+              <li><span>5th place</span><strong>1 pt</strong></li>
+            </ol>
+          </aside>
+        </div>
+
+        <div class="flow__timeline" aria-label="Event flow">
+          <div><small>Round 1</small><strong>20 min KOTC</strong><span>Five teams per court</span></div>
+          <div><small>Break</small><strong>10 min reset</strong><span>Water and scores</span></div>
+          <div><small>Round 2</small><strong>20 min KOTC</strong><span>Keep stacking points</span></div>
+          <div><small>Break</small><strong>10 min reset</strong><span>Quick recovery</span></div>
+          <div><small>Round 3</small><strong>20 min KOTC</strong><span>Final pool push</span></div>
+          <div><small>Cut</small><strong>Top 4 advance</strong><span>Total points decide it</span></div>
+          <div><small>Playoffs</small><strong>Semis + Final</strong><span>Best of 3 to 15</span></div>
+        </div>
+
+        <div class="flow__bracket" aria-label="Top four playoff bracket">
+          <div>
+            <small>Semifinals</small>
+            <strong>#1 vs #4</strong>
+            <strong>#2 vs #3</strong>
+          </div>
+          <span aria-hidden="true">to</span>
+          <div>
+            <small>Final</small>
+            <strong>Winner vs winner</strong>
+          </div>
+          <span aria-hidden="true">to</span>
+          <div>
+            <small>Champion</small>
+            <strong>King of the Beach</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup" id="signup" aria-labelledby="signup-title">
+        <div>
+          <p class="eyebrow">Ready to play?</p>
+          <h2 id="signup-title">Claim your invite.</h2>
+        </div>
+        <a class="button button--dark" data-signup-link href="#">
+          Open signup form
+        </a>
+      </section>
+
       <section class="sponsors" aria-labelledby="sponsors-title">
         <div class="sponsors__intro">
           <p class="eyebrow">Sponsored by</p>
@@ -167,16 +273,6 @@
             <img src="assets/sponsors/proper-pie.png" alt="Proper Pie Co.">
           </a>
         </div>
-      </section>
-
-      <section class="signup" id="signup" aria-labelledby="signup-title">
-        <div>
-          <p class="eyebrow">Ready to play?</p>
-          <h2 id="signup-title">Claim your invite.</h2>
-        </div>
-        <a class="button button--dark" data-signup-link href="#">
-          Open signup form
-        </a>
       </section>
     </main>
 
