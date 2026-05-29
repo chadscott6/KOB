@@ -1,4 +1,4 @@
-const signupUrl = "https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM";
+const signupUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfjcPTJBT0BhUzFIZHXzCtlmx8GigzqmC-qx__5Lbxuuy25pg/viewform?usp=publish-editor";
 const accessPasswordHash = "b60c2f01c409a0c9add7d5bee23bae8dc62a63abdfc16ce3f38d3fdde0f5fe73";
 const accessGrantedKey = "kob-access-granted";
 

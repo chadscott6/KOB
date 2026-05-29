@@ -8,12 +8,12 @@ The event copy follows the official King of the Court rules:
 https://kotc.ams3.digitaloceanspaces.com/img/KOTC-Rules.pdf
 ```
 
-## Update signup form
+## Signup form
 
-Replace the placeholder URL in `script.js`:
+The signup buttons point to the Google Form configured in `script.js`:
 
 ```js
-const signupUrl = "https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM";
+const signupUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfjcPTJBT0BhUzFIZHXzCtlmx8GigzqmC-qx__5Lbxuuy25pg/viewform?usp=publish-editor";
 ```
 
 Use a Google Form that writes responses to a Google Sheet.
